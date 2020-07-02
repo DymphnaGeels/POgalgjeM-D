@@ -71,3 +71,68 @@ def play(word):
        print("Gefeliciteerd, je hebt het woord geraden! je wint!")
    else:
        print("Sorry, je hebt geen beurten meer. Het woord was " + word + ". Volgende keer beter!")
+
+
+def display_hangman(tries):
+  stages = [
+              """
+                 --------
+                 |      |
+                 |      O
+                 |     \\|/
+                 |      |
+                 |     / \\
+                 -
+              """,
+ 
+              """
+                 --------
+                 |      |
+                 |      O
+                 |     \\|/
+                 |      |
+                 |     /
+                 -
+              """,
+ 
+              """
+                 --------
+                 |      |
+                 |      O
+                 |     \\|/
+                 |      |
+                 |    
+                 -
+              """,
+  
+              """
+                 --------
+                 |      |
+                 |      O
+                 |     \\|
+                 |      |
+                 |   
+                 -
+              """,
+ 
+              """
+                 --------
+                 |      |
+                 |      O
+                 |      |
+                 |      |
+                 |   
+                 -
+              """,
+      
+              """
+                 --------
+                 |      |
+                 |      O
+                 |  
+                 |    
+                 |   
+                 -
+              """
+  ]
+  return stages[tries]
