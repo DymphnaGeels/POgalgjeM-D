@@ -67,3 +67,7 @@ def play(word):
        print(display_hangman(tries))
        print(word_completion)
        print("\n")
+   if guessed:
+       print("Gefeliciteerd, je hebt het woord geraden! je wint!")
+   else:
+       print("Sorry, je hebt geen beurten meer. Het woord was " + word + ". Volgende keer beter!")
