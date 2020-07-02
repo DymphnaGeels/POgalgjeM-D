@@ -1,10 +1,11 @@
 import random
 from words import word_list
  
- 
+
 def get_word():
    word = random.choice(word_list)
    return word.upper()
+
 
 def play(word):
    word_completion = "_" * len(word)
@@ -20,4 +21,7 @@ def play(word):
    print(display_hangman(tries))
    print(word_completion)
    print("\n")
-   print('het woord heeft', len(word), 'letters')
+   print('het woord heeft', len(word), 'letters') 
+
+   if tries == 5:
+    print('je hebt nog 5 beurten over')
