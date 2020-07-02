@@ -136,3 +136,15 @@ def display_hangman(tries):
               """
   ]
   return stages[tries]
+
+
+def main():
+   word = get_word()
+   play(word)
+   while input("Nog een keer spelen? (J/N) ").upper() == "J":
+       word = get_word()
+       play(word)
+ 
+ 
+if __name__ == "__main__":
+   main()
